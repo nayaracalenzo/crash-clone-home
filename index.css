@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: fontCrash;
+  src: url(crash-a-like.ttf);
+}
+
+body {
+  background-image: url(./assets/backgroundimg.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  & #imgPrincipal {
+    padding: 30px;
+    & img {
+      height: 300px;
+      max-width: 768px;
+    }
+  }
+  #conteudo {
+  display: flex;
+  align-items: center;
+  & #listaOpcoes{
+    & ul{
+      display: block;
+      padding: 0 50px 0 200px;
+      list-style: none;
+      & li{
+        min-width: 300px;
+        font-size: 70px;
+        /* text-shadow:black 0 3px ; */
+        background-image: linear-gradient(to bottom, yellow, orangered );
+        background-clip: text;
+        color: transparent;
+        font-family: fontCrash;
+        filter: drop-shadow(3px 3px black);
+        transition-duration: 0.5s;
+        &:hover {
+          font-size: 80px;
+          color: blanchedalmond;
+          filter: drop-shadow(3px 3px black);
+        }
+      }
+    } 
+  }
+  & #jogos{
+    padding-left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    & img {
+      height: 250px;
+    }
+  }
+}
+}
+
